@@ -107,7 +107,16 @@
     font-weight: bold;
     line-height: 1.25;
   }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
   
+  .svg-icon svg {
+    stroke: var(--color-text)
+  }
+
   a,
   a:visited,
   button,
@@ -264,7 +273,7 @@ main {
 section {
     display: grid;
     grid-template-columns: auto;
-    row-gap: 1rem;
+    row-gap: 2rem;
     z-index: 98;
     justify-items: center;
 }
@@ -275,8 +284,36 @@ footer {
 }
 
 .avatar {
-  width: 15rem;
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+}
+
+.avatar img {
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .card__group {
@@ -289,13 +326,23 @@ footer {
 .card {
     display: flex;
     flex-direction: row;
-    height: 10rem;
+    height: auto;
     margin: 0;
     padding: 0;
     opacity: 1;
-    cursor: pointer;
+    width: 100%;
     justify-content: space-between;
     transition: all .25s;
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+    }
+}
+
+.card.card--reverse {
+  flex-direction: row-reverse;
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+  }
 }
 
 .card:hover {
@@ -310,7 +357,7 @@ footer {
 }
 
 .card .card__image img {
-  border-radius: 15%;
+  border-radius: 5%;
   position: absolute;
   top: 0;
   left: 0;
