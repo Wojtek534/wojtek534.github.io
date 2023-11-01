@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> wrzepka | Personal Website</title>
+        <meta property="title" content="wrzepka | Personal Website"/>
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <script src="./assets/js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <button id="theme-switch" alt="theme switch" tabindex="0" onclick=switchTheme() type="submit"></button>
+            </header>
+            <main class="main">
+                <section>
+                    <img src="./assets/img/avatar.jpg" class="avatar" alt="my photo"/>
+                    <h1>Hello, i'am Wojciech Rzepka</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis nec odio et ultricies. Proin gravida erat vitae tincidunt tempor. In maximus ipsum iaculis mauris semper malesuada. Suspendisse potenti. Cras vel odio arcu. Suspendisse bibendum metus quis dictum vestibulum. Etiam semper ullamcorper neque et bibendum. Nam id mi in elit porta rutrum ac ac tortor. Nunc porta diam id sem tempor rhoncus. Proin et lobortis nulla. Sed dignissim ornare elit eget molestie. Aenean dui mi, cursus eu sodales at, pretium eu purus. Proin congue, dui eget viverra tristique, odio metus commodo massa, eget feugiat lectus nunc a sapien. Suspendisse orci velit, pulvinar vitae dictum sit amet, mollis ac turpis. Sed tristique feugiat dolor vel posuere. Praesent sit amet massa non odio cursus suscipit eu id arcu.
+                    </p>
+                </section>
+                <div class="separator"></div>
+                <section>
+                    
+                </section>
+                <div class="separator"></div>
+                <section>
+                    <h2>Abilities</h2>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/img/avatar.jpg" alt="sample"/>
+                        </div>
+                        <div class="card__main">
+                            <div class="card__title">
+                                <h3>Lorem ipsum</h3>
+                            </div>
+                            <div class="card__content">
+                                <p>
+                                    Cras sit amet molestie ipsum, sed volutpat enim. Phasellus elit augue, viverra nec fermentum sit amet, vestibulum vitae leo. Cras a tincidunt metus. Aliquam in felis id enim molestie malesuada. Donec congue sed libero sit amet viverra. Cras aliquam sollicitudin accumsan. Nulla facilisis finibus magna sed egestas. Aliquam erat volutpat.
+                                </p>
+                            </div>
+                            <div class="card__navigation">
+                                <a href="/" alt="">More details</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="separator"></div>
+                <section>
+                    <h2>Projects</h2>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/img/avatar.jpg" alt="sample"/>
+                        </div>
+                        <div class="card__main">
+                            <div class="card__title">
+                                <h3>Lorem ipsum</h3>
+                            </div>
+                            <div class="card__content">
+                                <p>
+                                    Cras sit amet molestie ipsum, sed volutpat enim. Phasellus elit augue, viverra nec fermentum sit amet, vestibulum vitae leo. Cras a tincidunt metus. Aliquam in felis id enim molestie malesuada. Donec congue sed libero sit amet viverra. Cras aliquam sollicitudin accumsan. Nulla facilisis finibus magna sed egestas. Aliquam erat volutpat.
+                                </p>
+                            </div>
+                            <div class="card__navigation">
+                                <a href="/" alt="">More details</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p id="footer-text"></p>
+            </footer>
+            <script>
+                setFooter();
+            </script>
+        </div>
+        <script type="text/javascript">
+            initializeTheme();
+        </script>
+    </body>
+</html>
