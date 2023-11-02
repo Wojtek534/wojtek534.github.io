@@ -5,35 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Wojciech Rzepka | Personal Website</title>
         <meta property="title" content="wrzepka | Personal Website"/>
-        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/global.css">
         <script src="./assets/js/main.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="layout">
+        <div id="layout" class="layout" tabindex="-1">
             <header class="header">
                 <button id="theme-switch" alt="theme switch" tabindex="0" onclick=switchTheme() type="submit"></button>
             </header>
             <main class="main">
                 <section>
                     <div class="avatar">
-                        <img src="./assets/img/my-photo.jpg" alt="my photo"/>
+                        <img src="./assets/img/my-photo.webp" alt="my photo"/>
                     </div>
                     <h1>Hello, i am Wojciech Rzepka</h1>
                     <p>
-                        I'm polish Web Application Developer currently living in Bordeaux, France. 
+                        I'm a Polish Web Application Developer currently living in Bordeaux, France. 
                         I specialize in creating enterprise level applications using low code platform <a href="#outsystems" alt="scroll to outsystems" tabindex="0">Outsystems</a>. 
                     </p>
                     <p>
-                        My biggest accomplishment so far is developing and releasing procure-to-pay system Business Zone which i develop continuously for 5 years. This project allowed me to meet system developing stages from a scratch to a mature solution. 
-                        I have learned how to work with extensive architecture and adapt it for new functionalities.
-                        My journey through this project started as a junior developer and brigned me up to a team leader role where i teach and manage work of my colleagues.
+                        My biggest accomplishment so far is developing and releasing the procure-to-pay system Business Zone which I have developed continuously for 5 years. This project allowed me to meet system developing stages from a scratch to a mature solution. I have learned how to work with extensive architecture and adapt it for new functionalities. 
+                        My journey through this project started as a junior developer and brigned me up to a team leader role where I teach and manage work of my colleagues.
                     </p>
-                    <p>Privately i am an amateur photographer who donate his work to community using <a href="#unsplash" alt="scroll to unsplash" tabindex="0">unsplash</a> website.</p>
+                    <p>Privately, I am an amateur photographer who donate his work to the community using an <a href="#unsplash" alt="scroll to unsplash" tabindex="0">Unsplash</a> website.</p>
                 </section>
                 <div class="separator"></div>
                 <section>
@@ -57,11 +53,11 @@
                     <h1>Abilities</h1>
                     <div class="card" id="outsystems">
                         <div class="card__image">
-                            <img src="./assets/img/outsystems.png" alt="sample"/>
+                            <img src="./assets/img/outsystems.webp" alt="sample"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>Outsystems Development</h3>
+                                <h2>Outsystems Development</h2>
                             </div>
                             <div class="card__content">
                                 <p>
@@ -75,11 +71,11 @@
                     </div>
                     <div class="card">
                         <div class="card__image">
-                            <img src="./assets/img/programming.jpg" alt="sample"/>
+                            <img src="./assets/img/programming.webp" alt="sample"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>Traditional Programming</h3>
+                                <h2>Traditional Programming</h2>
                             </div>
                             <div class="card__content">
                                 <p>
@@ -90,11 +86,11 @@
                     </div>
                     <div class="card">
                         <div class="card__image">
-                            <img src="./assets/img/team.jpg" alt="sample"/>
+                            <img src="./assets/img/team.webp" alt="sample"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>Team management</h3>
+                                <h2>Team management</h2>
                             </div>
                             <div class="card__content">
                                 <p>
@@ -105,11 +101,11 @@
                     </div>
                     <div class="card">
                         <div class="card__image">
-                            <img src="./assets/img/design.jpg" alt="sample"/>
+                            <img src="./assets/img/design.webp" alt="sample"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>UI Design</h3>
+                                <h2>UI Design</h2>
                             </div>
                             <div class="card__content">
                                 <p>
@@ -124,11 +120,11 @@
                     <h1>Projects</h1>
                     <div class="card card--reverse">
                         <div class="card__image">
-                            <img src="./assets/img/business.jpg" alt="sample"/>
+                            <img src="./assets/img/business.webp" alt="sample"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>Business Zone</h3>
+                                <h2>Business Zone</h2>
                             </div>
                             <div class="card__content">
                                 <p>
@@ -142,14 +138,15 @@
                     </div>
                     <div class="card card--reverse">
                         <div class="card__image">
-                            <img src="./assets/img/complaint.jpg" alt="Complaint image"/>
+                            <img src="./assets/img/complaint.webp" alt="Complaint image"/>
                         </div>
                         <div class="card__main">
                             <div class="card__title">
-                                <h3>RMA - complaint system</h3>
+                                <h2>RMA - complaint system</h2>
                             </div>
                             <div class="card__content">
                                 <p>
+                                    Small system developed for a single company branch, including creating and managing complaints with internal and external interface, variety of processes, advanced notification system and database integration with main client system.
                                 </p>
                             </div>
                             <div class="card__navigation">
@@ -162,12 +159,19 @@
             <footer>
                 <p id="footer-text"></p>
             </footer>
-            <script>
-                setFooter();
-            </script>
         </div>
         <script type="text/javascript">
             initializeTheme();
+            focusLayout();
+            setFooter();
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHSBSRNBWM"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QHSBSRNBWM');
         </script>
     </body>
 </html>

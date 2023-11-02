@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "WebFont";
+  src: url("../font/Inter-Regular.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WebFont";
+  src: url("../font/Inter-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   --color-text: #111;
   --color-background: #fff;
@@ -60,9 +74,10 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'WebFont', sans-serif;
   font-weight: 400;
   line-height: 1.25;
+  letter-spacing: 0.05rem;
 }
 
 a {
@@ -89,15 +104,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.25;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.25;
+}
+
+h1,h2,h3 {
+  white-space: nowrap;
 }
 
 p {
@@ -132,13 +151,17 @@ button:visited {
 a:hover,
 a:visited:hover,
 a:focus,
-a:focus:hover
-button,
-button:visited,
+a:focus:hover,
+button:hover,
+button:visited:hover,
 button:focus,
 button:focus:hover {
   background-size: 100% 30%;
   text-decoration: none;
+}
+
+:focus {
+  outline: 0;
 }
 
 ::-webkit-scrollbar {
@@ -249,11 +272,20 @@ ul {
   grid-template-rows: 2rem repeat(3, auto);
   grid-template-columns: 1fr;
   row-gap: 2rem;
-  margin: 0rem 25%;
+  margin: 0;
   padding: 1rem 5rem;
   justify-items: center;
-  @media only screen and (max-width: 37.5em) {
-    margin: 2rem 5%;
+
+  @media only screen and (min-width: 37.5em) {
+    margin: 0rem 10%;
+  }
+  
+  @media only screen and (min-width: 56.25em) {
+    margin: 0rem 15%;
+  }
+  
+  @media only screen and (min-width: 75em) {
+    margin: 0rem 25%;
   }
 }
 
@@ -285,8 +317,8 @@ footer {
 
 .avatar {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .avatar img {
@@ -347,6 +379,9 @@ footer {
   filter: grayscale(0.85);
   flex-basis: 20%;
   min-height: 10rem;
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+  }
 }
 
 .card .card__image img {

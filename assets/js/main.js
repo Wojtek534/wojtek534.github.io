@@ -53,3 +53,7 @@ function isInternetExplorer () {
 function setFooter () {
     document.getElementById('footer-text').innerHTML = "Copyright (c) "+ new Date().getFullYear().toString();
 }
+
+function focusLayout () {
+    document.getElementById('layout').focus();
+}
