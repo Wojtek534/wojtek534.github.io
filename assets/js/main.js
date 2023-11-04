@@ -1,11 +1,23 @@
 const lightTheme = "light"
 const darkTheme = "dark"
 
-function initializeTheme () {
+function initializeScripts () {
     /* Skip IE */
     if (isInternetExplorer() === true) {
         return;
     }
+    initializeTheme();
+    focusLayout();
+    setFooter();
+    setNavigateArrow();
+}
+
+function isInternetExplorer () {
+    var agent = navigator.userAgent;
+    return (agent.indexOf("MSIE") > -1 || agent.indexOf("Trident") > -1);
+}
+
+function initializeTheme () {
     const ls = localStorage.getItem('theme');
     switch(ls) {
         case lightTheme: {
@@ -45,15 +57,23 @@ function setTheme (theme) {
     document.getElementById('theme-switch').innerHTML = theme;
 }
 
-function isInternetExplorer () {
-    var agent = navigator.userAgent;
-    return (agent.indexOf("MSIE") > -1 || agent.indexOf("Trident") > -1);
-}
-
 function setFooter () {
     document.getElementById('footer-text').innerHTML = "Copyright (c) "+ new Date().getFullYear().toString();
 }
 
 function focusLayout () {
     document.getElementById('layout').focus();
+}
+
+function setNavigateArrow() {
+    const layout = document.getElementById('layout');
+    const arrow = document.getElementById('navigate-top');
+    const activeClass = "active";
+    layout.addEventListener("scroll", () => {
+        if(layout.scrollTop >= 100 && !arrow.classList.contains(activeClass)) { 
+            arrow.classList.add(activeClass);
+        } else if (layout.scrollTop <= 100 && arrow.classList.contains(activeClass)) { 
+            arrow.classList.remove(activeClass);
+        }
+    })
 }

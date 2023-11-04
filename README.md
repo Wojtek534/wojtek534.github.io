@@ -12,11 +12,12 @@
 - [x] Flavicon
 - [x] Page Title
 - [x] Font
-- [ ] Responsive 🔥
+- [x] Responsive
 - [ ] Transitions 🔥
 
 ## Extras 🤔
 - [ ] Verify website using lighthouse 🔥
-- [ ] Navigate top arrow
-- [ ] Google Analytics 🔥
+- [x] Navigate top arrow
+- [x] Google Analytics
 - [ ] Personal projects
+- [ ] Replace images with self made photos
