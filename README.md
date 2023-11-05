@@ -13,6 +13,7 @@
 - [x] Page Title
 - [x] Font
 - [x] Responsive
+- [ ] Mobile scroll navigate 🔥
 - [ ] Transitions 🔥
 
 ## Extras 🤔
