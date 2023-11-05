@@ -7,14 +7,15 @@
 - [x] Abilities description
 - [x] Projects description
 - [ ] Text correction check 🔥
+- [ ] Description improvements 🔥
 - [x] Images selection
 - [x] Images conversion to .webp
 - [x] Flavicon
 - [x] Page Title
 - [x] Font
 - [x] Responsive
-- [ ] Mobile scroll navigate 🔥
-- [ ] Transitions 🔥
+- [x] Mobile scroll navigate
+- [x] Transitions
 
 ## Extras 🤔
 - [ ] Verify website using lighthouse 🔥
