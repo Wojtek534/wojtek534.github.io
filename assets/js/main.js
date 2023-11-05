@@ -65,6 +65,13 @@ function focusLayout () {
     document.getElementById('layout').focus();
 }
 
+function focusById (id) {
+    /* onclick="focusById('outsystems')" */
+    const el = document.getElementById(id);
+    el.scrollIntoView({behavior: 'smooth'});
+    el.focus();
+}
+
 function setNavigateArrow() {
     const layout = document.getElementById('layout');
     const arrow = document.getElementById('navigate-top');
