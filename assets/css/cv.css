@@ -97,6 +97,7 @@
   p {
     font-size: 10px;
     line-height: 1.25;
+    font-weight: normal;
     text-align: justify;
   }
   
@@ -226,6 +227,7 @@
     opacity: 0.05;
     background-image: url(../img/semiconductor.svg);
     object-fit: cover;
+    z-index: -1;
   }
 
   header {
@@ -355,7 +357,8 @@
     row-gap: 0.1rem;
   }
 
-  .content__item::before {
+  .content__item::before,
+  .content__subitem::before {
     content: "";
     position: absolute;
     top: 0;
@@ -381,17 +384,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-  }
-
-  .content__subitem::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
   }
 
   .contact {
@@ -421,21 +413,4 @@
       display: flex;
       flex-direction:row;
       justify-content: flex-end;
-  }
-  
-  .separator--light.separator::after {
-    background-color: var(--color-light);
-  }
-  
-  .separator::after {
-    content: "";
-    background-color: var(--color-primary);
-    display: block;
-    height: 2px;
-    width: 100%;
-  }
-  
-  .separator.separator--vertical::after {
-    height: 1px;
-    width: 100%;
   }
