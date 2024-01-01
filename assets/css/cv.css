@@ -21,6 +21,12 @@
     --color-text: #111;
     --color-background: #fff;
   }
+
+  [data-theme="bw"] {
+    --color-primary: #000;
+    --color-secondary: #333;
+    --color-contrast: #aaa;
+  }
   
   [data-theme="dark"] {
     --color-text: #f9f9f9;
@@ -31,8 +37,7 @@
     --color-text: #111;
     --color-background: #fff;
   }
-  //123354
-  //19324b
+  
   html {
     padding: 0;
     margin: 0;
@@ -213,9 +218,9 @@
 
   .layout__background {
     position: absolute;
-    height: 68%;
+    height: 20cm;
     width: 100%;
-    top: 32%;
+    top: 9cm;
     left:0;
     right: 0;
     z-index: 1;
@@ -352,14 +357,24 @@
     row-gap: 0.1rem;
   }
 
-  .content__item::before,
-  .content__subitem::before {
+  .content__item::before{
     content: "";
     position: absolute;
     top: 0;
     left: -15px;
     width: 10px;
     height: 10px;
+    background-color: var(--color-secondary);
+    border-radius: 15%;
+  }
+
+  .content__subitem::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    width: 6px;
+    height: 6px;
     background-color: var(--color-secondary);
     border-radius: 15%;
   }
@@ -382,7 +397,7 @@
   }
 
   .content__subitem {
-    margin-left: 15px;
+    margin-left: 11px;
     position: relative;
     display: flex;
     flex-direction: column;
