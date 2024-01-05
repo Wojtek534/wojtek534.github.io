@@ -224,7 +224,7 @@
     left:0;
     right: 0;
     z-index: 1;
-    opacity: 0.05;
+    opacity: 0.035;
     background-image: url(../img/semiconductor.svg);
     object-fit: cover;
     z-index: -1;
