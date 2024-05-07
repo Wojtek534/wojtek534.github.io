@@ -5,7 +5,7 @@
     font-style: normal;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "WebFont";
     src: url("../font/Inter-Bold.ttf") format("TrueType");
@@ -27,26 +27,26 @@
     --color-secondary: #333;
     --color-contrast: #aaa;
   }
-  
+
   [data-theme="dark"] {
     --color-text: #f9f9f9;
     --color-background: #111;
   }
-  
+
   [data-theme="light"] {
     --color-text: #111;
     --color-background: #fff;
   }
-  
+
   html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     overflow: auto;
-    height: 
+    height:
     box-shadow: 0 1 0 0 #ccc;
   }
-  
+
   body {
     color: var(--color-text);
     background-color: var(--color-background);
@@ -59,16 +59,16 @@
     line-height: 1.25;
     letter-spacing: 0.5px;
   }
-  
+
   a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   * {
     box-sizing: border-box;
   }
-  
+
   *,
   *::after,
   *::before {
@@ -76,13 +76,13 @@
     padding: 0;
     box-sizing: inherit;
   }
-  
+
   h1 {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.25;
   }
-  
+
   h2 {
     font-size: 20px;
     font-weight: bold;
@@ -93,23 +93,23 @@
     font-weight: bold;
     line-height: 1.25;
   }
-  
+
   h1,h2,h3 {
     text-transform: uppercase;
     white-space: nowrap;
   }
-  
+
   p {
     font-size: 10px;
     line-height: 1.25;
     font-weight: normal;
     text-align: justify;
   }
-  
+
   .svg-icon svg {
     stroke: var(--color-primary)
   }
-  
+
   a,
   a:visited,
   button,
@@ -121,7 +121,7 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+
   a:hover,
   a:visited:hover,
   a:focus,
@@ -133,38 +133,38 @@
     background-size: 100% 30%;
     text-decoration: none;
   }
-  
+
   :focus {
     outline: 0;
   }
-  
+
   ::-webkit-scrollbar {
     width: 15px;
     cursor: pointer;
   }
-  
+
   ::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background-color: var(--color-text);
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
-  
+
   i.icon {
     font-size: 12px;
     color: var(--color-text);
   }
-  
-  
+
+
   form .formline:not(:last-child) {
     margin-bottom: 20px;
   }
-  
-  
+
+
   input,
   textarea,
   select,
@@ -181,7 +181,7 @@
   a:focus {
         outline: none;
   }
-  
+
   input:not([type=checkbox]),
   textarea,
   select,
@@ -190,19 +190,19 @@
     -moz-appearance: none;
     appearance: none;
   }
-  
+
   button {
     font-size: 15px;
   }
-  
+
   label {
     font-size: 11px;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   .layout {
     position: relative;
     display: flex;
@@ -210,7 +210,7 @@
     height: 29cm;
     width: 20cm;
     z-index: 100;
-    row-gap: 20px;
+    row-gap: 15px;
     margin: 10px auto;
     padding: 0px;
     justify-items: center;
@@ -236,7 +236,7 @@
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 15px;
   }
 
   main {
@@ -244,7 +244,7 @@
     display: grid;
     grid-template-rows: repeat(2, max-content);
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
+    row-gap: 15px;
     column-gap: 20px;
   }
 
@@ -297,7 +297,7 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .avatar img {
     position: absolute;
     top: 0;
@@ -425,7 +425,7 @@
     height: 30px;
     margin-bottom: 1px;
   }
-  
+
   footer {
       display: flex;
       flex-direction:row;
